@@ -752,9 +752,17 @@ body{
     text-decoration: none;
 }
 .signup-block a:hover{
-    color: #141414;
+    color: #4837ff;
 }
 
+
+.signup-block button a{
+    color: white;
+    text-decoration: none;
+}
+.signup-block button a:hover{
+    color: #fff;
+}
 
 
 

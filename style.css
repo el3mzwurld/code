@@ -4,6 +4,7 @@
 
 *{
     box-sizing: border-box;
+    
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
@@ -74,6 +75,7 @@ body{
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    border-style: none;
     padding: 0 1rem;
     height: 100%;
 }
@@ -99,6 +101,7 @@ body{
     outline: none;
     border-radius: 4px; 
     background: #f77062;
+    border: none;
   
 
 }
@@ -113,6 +116,27 @@ body{
 /*Responsive screen for max size 960*/
 
 @media screen and (max-width: 960px){
+    .signup-block {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 8px;
+        
+        border-radius: 12px;
+      }
+      
+      
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
+      
+      
+    
     .container{
         display: flex;
         justify-content: space-between;
@@ -295,6 +319,9 @@ body{
 
 /*Mobile Screens*/
 @media screen and(max-width: 760px) {
+    .signup-block{
+        
+    }
     .wrapper{
         display: grid;
         grid-template-columns: auto;
@@ -404,7 +431,25 @@ body{
     left: 30px;
 }
 
-
+.form-wrapper{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(to left );
+    color: #f77062;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  
+    transition: transform .8s ease , height, width .2s ease ;
+   
+}
 .services-card button{
     color: #fff;
     padding: 10px 20px;
@@ -419,6 +464,7 @@ body{
     cursor:pointer;
 }
 
+
 .services-card button:after{
     position: absolute;
     content: '';
@@ -432,7 +478,7 @@ body{
   
 }
 .services-card button:hover{
-    color: #fff;
+    color: #ac5c5c;
 }
 
 .services-card button:hover:after{
@@ -611,11 +657,55 @@ body{
 }
 
 
-
-
-
-
-
+.signup-block {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+  }
+  
+  .signup-block h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-group input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  
+  .signup{
+    font-size: 1rem;
+     padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    background-color: #ff8177;
+    color: #fff;
+    cursor: pointer;
+    
+    transition: all 0.8s;
+    outline: none;
+}
 
 
 

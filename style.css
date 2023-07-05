@@ -106,8 +106,8 @@ body{
 
 }
 .btn:hover{
-    background: #4837ff;
-    transition: all 0.8s ease;
+    background: #ff0844;
+    transition: 2s ease-in-out;
 }
 .navbar_links:hover{
     color: #f77062;
@@ -117,7 +117,7 @@ body{
 
 @media screen and (max-width: 960px){
     .signup-block {
-        max-width: 100%;
+        max-width: 90%;
         margin: 0 auto;
         padding: 8px;
         
@@ -319,9 +319,24 @@ body{
 
 /*Mobile Screens*/
 @media screen and(max-width: 760px) {
-    .signup-block{
+    .signup-block {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 8px;
         
-    }
+        border-radius: 12px;
+      }
+      
+      
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
     .wrapper{
         display: grid;
         grid-template-columns: auto;
@@ -355,7 +370,24 @@ body{
 }
 
 @media screen and (max-width: 480px){
-    
+    .signup-block {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 8px;
+        
+        border-radius: 12px;
+      }
+      
+      
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
     .wrapper_content h1{
         font-size: 2rem;
         margin-top: 3rem;
@@ -702,13 +734,26 @@ body{
     background-color: #ff8177;
     color: #fff;
     cursor: pointer;
-    
-    transition: all 0.8s;
+    max-width: 100%;
+  
     outline: none;
+}
+
+.signup:hover{
+    background-color: #ff0844;
+    transition:  0.8s ease-in;
 }
 
 
 
+
+.signup-block a{
+    color: #ff0844;
+    text-decoration: none;
+}
+.signup-block a:hover{
+    color: #141414;
+}
 
 
 
